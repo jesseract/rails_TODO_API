@@ -1,5 +1,14 @@
 require 'test_helper' 
 
-class TodoTest < ActiveSupport::TestCase
+Rspec.describe Todo, type: :model do
+ it { is_expected.to respond_to(:title) }
+ it { is_expected.to respond_to(:is_completed) }
 
-end
+ describe "todo" do
+  subject(:todo) { build(:todo) }
+  
+
+ end
+
+  
+
