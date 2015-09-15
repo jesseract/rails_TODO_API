@@ -1,7 +1,7 @@
 class TodosController < ApplicationController
 
   def index
-    render json: todos, status: 200
+    render json: Todo.all
   end
 
   def create
